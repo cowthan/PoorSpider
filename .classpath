@@ -10,6 +10,12 @@
 	<classpathentry kind="lib" path="libs/okio-1.6.0.jar"/>
 	<classpathentry kind="lib" path="okhttp-2.6.0.jar"/>
 	<classpathentry kind="lib" path="gson-2.6.2.jar"/>
+	<classpathentry kind="lib" path="libs/commons-dbcp-1.4.jar"/>
+	<classpathentry kind="lib" path="libs/commons-pool-1.5.4.jar"/>
+	<classpathentry kind="lib" path="libs/log4j-1.2.15.jar"/>
+	<classpathentry kind="lib" path="libs/mysql-connector-java-5.1.9.jar"/>
+	<classpathentry kind="lib" path="libs/freemarker.jar"/>
 	<classpathentry kind="src" path="src-qiniu"/>
+	<classpathentry kind="src" path="src-nutz"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

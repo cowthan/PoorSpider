@@ -28,8 +28,13 @@ public class WeChatRootPage extends JsoupPage{
 	
 	private List<WeChatTop> tops = new ArrayList<>();
 	
+	public List<WeChatTop> getCrawedTops(){
+		return tops;
+	}
+	
 	@Override
 	protected void tryToRead(Document doc) {
+
 		for(int i = 0; i < 10; i++){
 			String id = li_id_tmpl.replace("{index}", i + "");
 			Element li = doc.getElementById(id);
@@ -94,7 +99,7 @@ public class WeChatRootPage extends JsoupPage{
 		String desc_p_id = desc_p_id_tmpl.replace("{index}", index + "");
 		Element desc_p = li.getElementById(desc_p_id);
 		if(desc_p != null){
-			top.desc = desc_p.text();
+			top.shortIntro = desc_p.text();
 		}else{
 		}
 		
